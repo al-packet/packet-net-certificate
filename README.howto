@@ -1,0 +1,23 @@
+
+# build the container
+
+  docker build -t packet-net-wildcard .
+
+# run the container
+
+  docker run --rm -ti -v "$(pwd)/local-etc:/local-etc" packet-net-wildcard
+
+# inside the container run the following script to run Lets Encrypt with the 
+# required arguments to generate a wildcard for *.packet.net
+
+run-certbot.sh
+
+# after following the directions from certbot and generating your
+# certificates,  we need to save off the letsencrypt data 
+# before exiting the container by running:
+
+save-before-exit.sh
+
+# verify that a tar file exists /local-etc before exiting the container
+
+

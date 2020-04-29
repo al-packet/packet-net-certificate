@@ -8,7 +8,7 @@
   docker run --rm -ti -v "$(pwd)/local-etc:/local-etc" packet-net-wildcard
 
 # inside the container run the following script to run Lets Encrypt with the 
-# required arguments to generate a wildcard for *.packet.net
+# required arguments to generate a wildcard for *.ops.packet.net
 
 run-certbot.sh
 

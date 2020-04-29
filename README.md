@@ -1,7 +1,7 @@
 # packet-net-certificate
-Use Let's Encrypt to generate a wildcard certificate for *.packet.net
+Use Let's Encrypt to generate a wildcard certificate for *.ops.packet.net
 
-This tool will build a simple container and populate it with a couple of simple scripts that will allow you to use Let's Encrypt to generate a wildcard certificate for *.packet.net.
+This tool will build a simple container and populate it with a couple of simple scripts that will allow you to use Let's Encrypt to generate a wildcard certificate for *.ops.packet.net.
 
 Note: we will use DNS authorization with Let's Encrypt.  This means that the user will place some custom TXT records in the DNS server for Let's encrypt to validate that they own/control the domain.
 

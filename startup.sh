@@ -18,7 +18,7 @@ OUTFILE=/usr/local/bin/run-certbot.sh
 cat <<'EOF'
 #!/bin/bash
 certbot certonly --manual --manual-public-ip-logging-ok --preferred-challenges dns-01 \
- --server https://acme-v02.api.letsencrypt.org/directory -d "*.packet.net" -d packet.net
+ --server https://acme-v02.api.letsencrypt.org/directory -d "*.ops.packet.net" -d ops.packet.net
 
 EOF
 ) >> $OUTFILE
